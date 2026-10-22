@@ -177,9 +177,22 @@ class clientuzum (models.Model):
     name = models.CharField(max_length=120)
     surename = models.CharField(max_length=120)
     uzum = models.ForeignKey(uzum,on_delete=models.CASCADE)
+    
 
 
+class work (models.Model):
+    name = models.CharField(max_length=120)
+    age = models.IntegerField()
+    staj = models.IntegerField()
+    oldwork = models.CharField(max_length=120)
 
+class worker (models.Model):
+    name = models.CharField(max_length=120)
+    age = models.IntegerField()
+
+    work = models.ForeignKey(work,on_delete=models.CASCADE)
+
+    
 
 
 
