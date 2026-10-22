@@ -15,4 +15,6 @@ admin.site.register(avtor)
 admin.site.register(vidio)
 admin.site.register(bank)
 admin.site.register(bankclient)
+admin.site.register(work)
+admin.site.register(worker)
 

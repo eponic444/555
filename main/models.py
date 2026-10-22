@@ -189,10 +189,11 @@ class work (models.Model):
 class worker (models.Model):
     name = models.CharField(max_length=120)
     age = models.IntegerField()
+    
 
     work = models.ForeignKey(work,on_delete=models.CASCADE)
 
-    
+
 
 
 
